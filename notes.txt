@@ -1,0 +1,3 @@
+python manage.py runserver -- runs the development server
+python manage.py test -- runs unit tests
+python functional_tests -- should be run
