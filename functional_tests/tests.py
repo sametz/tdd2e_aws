@@ -113,7 +113,7 @@ class NewVisitorTest(StaticLiveServerTestCase):
         self.assertIn('Buy milk', page_text)
 
         # Satisfied, they both go back to sleep
-        self.fail('Finish the test!')
+        #self.fail('Finish the test!')
 
     def test_layout_and_styling(self):
         # Edith goes to the home page
