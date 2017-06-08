@@ -12,12 +12,15 @@ env.user = 'ubuntu'
 # Had to move .pem to another folder because "Google Drive" space in name
 # causes "no such file or directory error" when script run!
 env.key_filename = '~/Documents/aws/thompetz_aws.pem'
-env.hosts = ["ec2-52-14-249-213.us-east-2.compute.amazonaws.com"]
-#env.hosts = ["52.14.249.213"]
 
-#print('env.port = :', env.port)
-# print('env.roledefs:')
-# print(env.roledefs)
+# Trial and error: comment in TDDWP chapter indicated the line below was
+# needed, but it uses that string as the site folder, gunicorn wsgi ref,
+# etc etc.
+#env.hosts = ["ec2-52-14-249-213.us-east-2.compute.amazonaws.com"]
+
+# THe following worked! but I guess this string has to be changed for each
+# deployment.
+env.hosts = 'superlists-staging.thompetz.com'
 
 
 def deploy():
