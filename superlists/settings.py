@@ -25,7 +25,8 @@ SECRET_KEY = ')of^ou*6)4w9hxb)of#-9icn1wbxn-u6zg7=31@o5dbn@j)#c+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# based on gunicorn logs, adding server aliases below:
+ALLOWED_HOSTS = ['52.14.249.213', 'thompetz.com', 'www.thompetz.com']
 
 
 # Application definition
